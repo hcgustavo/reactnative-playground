@@ -1,13 +1,13 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
+import { Collapsible } from '@/components/ui/collapsible';
+import { Colors } from '@/constants/theme';
+import { Image } from 'expo-image';
 import { Link } from 'expo-router';
+import { StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -17,63 +17,68 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+        <ThemedText style={{ fontSize: 32, fontWeight: 'bold', height: 40 }}>React Native Playground</ThemedText>
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
+        <ThemedText style={{ fontSize: 28, fontWeight: 'bold', color: Colors.light.tint }}>Hooks</ThemedText>
+
+        <Collapsible title="useState">
+          <Link href='/usestate/exercise01'>Exercice 1</Link>
+          <Link href='/usestate/exercise02'>Exercice 2</Link>
+          <Link href='/usestate/exercise03'>Exercice 3</Link>
+          <Link href='/usestate/exercise04'>Exercice 4</Link>
+          <Link href='/usestate/exercise05'>Exercice 5</Link>
+          <Link href='/usestate/exercise06'>Exercice 6</Link>
+          <Link href='/usestate/exercise07'>Exercice 7</Link>
+          <Link href='/usestate/exercise08'>Exercice 8</Link>
+          <Link href='/usestate/exercise09'>Exercice 9</Link>
+          <Link href='/usestate/exercise10'>Exercice 10</Link>
+        </Collapsible>
+
+        <Collapsible title="useReducer">
+        </Collapsible>
+
+        <Collapsible title="useContext">
+        </Collapsible>
+
+        <Collapsible title="useRef">
+        </Collapsible>
+
+        <Collapsible title="useImperativeHandle">
+        </Collapsible>
+
+        <Collapsible title="useEffect">
+        </Collapsible>
+
+        <Collapsible title="useLayoutEffect">
+        </Collapsible>
+
+        <Collapsible title="useEffectEvent">
+        </Collapsible>
+
+        <Collapsible title="useMemo">
+        </Collapsible>
+
+        <Collapsible title="useCallback">
+        </Collapsible>
+
+        <Collapsible title="useTransition">
+        </Collapsible>
+
+        <Collapsible title="useDeferredValue">
+        </Collapsible>
+
+        <Collapsible title="useDebugValue">
+        </Collapsible>
+
+        <Collapsible title="useId">
+        </Collapsible>
+
+        <Collapsible title="useSyncExternalStore">
+        </Collapsible>
+
+        <Collapsible title="useActionState">
+        </Collapsible>
+
     </ParallaxScrollView>
   );
 }
