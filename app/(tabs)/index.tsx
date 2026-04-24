@@ -35,6 +35,10 @@ export default function HomeScreen() {
         </Collapsible>
 
         <Collapsible title="useReducer">
+          <Link href='/usereducer/exercise01'>Exercice 1</Link>
+          <Link href='/usereducer/exercise02'>Exercice 2</Link>
+          <Link href='/usereducer/exercise03'>Exercice 3</Link>
+          <Link href='/usereducer/exercise04'>Exercice 4</Link>
         </Collapsible>
 
         <Collapsible title="useContext">
