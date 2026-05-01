@@ -20,7 +20,7 @@ Example:
 
 import { useContext } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import { LanguageContext, LanguageProvider } from "./context/LanguageContext";
+import { LanguageContext, LanguageProvider } from "../../context/LanguageContext";
 
 export default function Exercise03() {
     return (
