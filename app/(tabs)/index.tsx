@@ -46,6 +46,7 @@ export default function HomeScreen() {
           <Link href='/usecontext/exercise02'>Exercice 2</Link>
           <Link href='/usecontext/exercise03'>Exercice 3</Link>
           <Link href='/usecontext/exercise04'>Exercice 4</Link>
+          <Link href='/usecontext/exercise05'>Exercice 5</Link>
         </Collapsible>
 
         <Collapsible title="useRef">
