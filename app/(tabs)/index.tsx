@@ -2,11 +2,13 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { Collapsible } from '@/components/ui/collapsible';
 import { Colors } from '@/constants/theme';
+import { useTheme } from '@react-navigation/native';
 import { Image } from 'expo-image';
 import { Link } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
+  const theme  = useTheme();
 
   return (
     <ParallaxScrollView
@@ -22,34 +24,41 @@ export default function HomeScreen() {
         <ThemedText style={{ fontSize: 28, fontWeight: 'bold', color: Colors.light.tint }}>Hooks</ThemedText>
 
         <Collapsible title="useState">
-          <Link href='/usestate/exercise01'>Exercice 1</Link>
-          <Link href='/usestate/exercise02'>Exercice 2</Link>
-          <Link href='/usestate/exercise03'>Exercice 3</Link>
-          <Link href='/usestate/exercise04'>Exercice 4</Link>
-          <Link href='/usestate/exercise05'>Exercice 5</Link>
-          <Link href='/usestate/exercise06'>Exercice 6</Link>
-          <Link href='/usestate/exercise07'>Exercice 7</Link>
-          <Link href='/usestate/exercise08'>Exercice 8</Link>
-          <Link href='/usestate/exercise09'>Exercice 9</Link>
-          <Link href='/usestate/exercise10'>Exercice 10</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise01'>Exercice 1</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise02'>Exercice 2</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise03'>Exercice 3</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise04'>Exercice 4</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise05'>Exercice 5</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise06'>Exercice 6</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise07'>Exercice 7</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise08'>Exercice 8</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise09'>Exercice 9</Link>
+          <Link style={{ color: theme.colors.text }} href='/usestate/exercise10'>Exercice 10</Link>
         </Collapsible>
 
         <Collapsible title="useReducer">
-          <Link href='/usereducer/exercise01'>Exercice 1</Link>
-          <Link href='/usereducer/exercise02'>Exercice 2</Link>
-          <Link href='/usereducer/exercise03'>Exercice 3</Link>
-          <Link href='/usereducer/exercise04'>Exercice 4</Link>
+          <Link style={{ color: theme.colors.text }} href='/usereducer/exercise01'>Exercice 1</Link>
+          <Link style={{ color: theme.colors.text }} href='/usereducer/exercise02'>Exercice 2</Link>
+          <Link style={{ color: theme.colors.text }} href='/usereducer/exercise03'>Exercice 3</Link>
+          <Link style={{ color: theme.colors.text }} href='/usereducer/exercise04'>Exercice 4</Link>
         </Collapsible>
 
         <Collapsible title="useContext">
-          <Link href='/usecontext/exercise01'>Exercice 1</Link>
-          <Link href='/usecontext/exercise02'>Exercice 2</Link>
-          <Link href='/usecontext/exercise03'>Exercice 3</Link>
-          <Link href='/usecontext/exercise04'>Exercice 4</Link>
-          <Link href='/usecontext/exercise05'>Exercice 5</Link>
+          <Link style={{ color: theme.colors.text }} href='/usecontext/exercise01'>Exercice 1</Link>
+          <Link style={{ color: theme.colors.text }} href='/usecontext/exercise02'>Exercice 2</Link>
+          <Link style={{ color: theme.colors.text }} href='/usecontext/exercise03'>Exercice 3</Link>
+          <Link style={{ color: theme.colors.text }} href='/usecontext/exercise04'>Exercice 4</Link>
+          <Link style={{ color: theme.colors.text }} href='/usecontext/exercise05'>Exercice 5</Link>
         </Collapsible>
 
         <Collapsible title="useRef">
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise01'>Exercice 1</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise02'>Exercice 2</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise03'>Exercice 3</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise04'>Exercice 4</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise05'>Exercice 5</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise06'>Exercice 6</Link>
+          <Link style={{ color: theme.colors.text }} href='/useref/exercise07'>Exercice 7</Link>
         </Collapsible>
 
         <Collapsible title="useImperativeHandle">
