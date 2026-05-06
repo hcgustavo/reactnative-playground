@@ -62,6 +62,11 @@ export default function HomeScreen() {
         </Collapsible>
 
         <Collapsible title="useImperativeHandle">
+          <Link style={{ color: theme.colors.text }} href='/useimperativehandle/exercise01'>Exercice 1</Link>
+          <Link style={{ color: theme.colors.text }} href='/useimperativehandle/exercise02'>Exercice 2</Link>
+          <Link style={{ color: theme.colors.text }} href='/useimperativehandle/exercise03'>Exercice 3</Link>
+          <Link style={{ color: theme.colors.text }} href='/useimperativehandle/exercise04'>Exercice 4</Link>
+          <Link style={{ color: theme.colors.text }} href='/useimperativehandle/exercise05'>Exercice 5</Link>
         </Collapsible>
 
         <Collapsible title="useEffect">
