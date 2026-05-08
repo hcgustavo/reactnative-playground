@@ -88,6 +88,9 @@ export default function HomeScreen() {
       </Collapsible>
 
       <Collapsible title="useEffectEvent">
+        <Link style={{ color: theme.colors.text }} href='/useeffectevent/exercise01'>Exercice 1</Link>
+        <Link style={{ color: theme.colors.text }} href='/useeffectevent/exercise02'>Exercice 2</Link>
+        <Link style={{ color: theme.colors.text }} href='/useeffectevent/exercise03'>Exercice 3</Link>
       </Collapsible>
 
       <Collapsible title="useMemo">
